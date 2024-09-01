@@ -28,6 +28,43 @@ document.addEventListener('click', function(){
     let elements = document.getElementsByClassName('item');
     if (event.target.classList.contains('item')) {
         console.log(event.target.id); 
+         let five = true;
+        for(let i = event.target.id; i<=event.target.id+5; i++){
+             if(event.target.id.textContent !="X"){
+                console.log(i);
+                 five = false;
+                 break;
+             }else{
+                console.log('winwinwin');
+             }
+
+            //  for(let i = event.target.id; i<)
+//              var arr =[[2,3,[2,3]], [2,3], [2,3]];
+// var product = 1;
+
+// For (i=0; i<arr.length; i++) {
+//     For (j=0; j<arr[i].length; j++) {
+//     For (k=0; k<arr[j].lenght; k++) {
+//         product *=arr[i][j][k];  
+//     }
+// }
+            // if (elements[i].textContent == "X" && elements[i+1].textContent == ""){
+            //     break;
+            // }else if(elements[i].textContent == "X" && elements[i+1].textContent == "X" && elements[i+2].textContent == ""){
+            //     break;
+            // }
+            // else if(elements[i].textContent == "X" && elements[i+1].textContent == "X" && elements[i+2].textContent == "X" && elements[i+3].textContent == ""){
+            //     break;
+            // }else if(elements[i].textContent == "X" && elements[i+1].textContent == "X" && elements[i+2].textContent == "X"&& elements[i+3].textContent == "X" && elements[i+4].textContent == ""){
+            //     break;
+            // }else if(elements[i].textContent == "X" && elements[i+1].textContent == "X" && elements[i+2].textContent == "X"&& elements[i+3].textContent == "X" && elements[i+4].textContent == "X"){
+            //     console.log('winning');
+            // }
+            //     break;
+            // }if(elements[i].textContent == "X" && elements[i+1].textContent == "X" && elements[i+2].textContent == ""){
+
+            // }
+        }
     }
 });
 
