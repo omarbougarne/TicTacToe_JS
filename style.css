@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 body{
     background-color: #8DDFCB;
+    font-family: 'Playwrite CU', Arial, sans-serif;
 }
 #gameContainer {
     display: grid;
@@ -26,4 +31,23 @@ body{
     width: 70px;
     background-color: rgb(234, 122, 244);
     border-radius: 5px;
+}
+#play_btn{
+    border: 1px solid pink ;
+    background-color: pink;
+    border-radius: 29px;
+    font-size: 70px;
+    text-decoration: none;
+}
+#go{
+    border: 1px solid pink ;
+    background-color: pink;
+    border-radius: 8px;
+    font-size: 20px;
+    text-decoration: none;
+}
+input{
+    border: 1px solid pink ;
+    border-radius: 30px;
+    height: 30px;
 }

@@ -49,6 +49,11 @@ document.addEventListener('DOMContentLoaded', function(){
                 item.textContent ="O";
                 current = "X";
             }
+            
+            for (j = box[i]; j <= 4; j++) {
+                console.log(id);
+              }
+            
             // if(content == "" )
             console.log(item.textContent); 
             
