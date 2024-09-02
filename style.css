@@ -13,8 +13,8 @@ body{
     gap: 1px;
 }
 .container-style{
-    /*display: flex;
-    flex-direction: column;
+    display: flex;
+    /*flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-end; */
     padding: 0;
@@ -55,6 +55,9 @@ input{
     border: 1px solid pink ;
     background-color: pink;
     border-radius: 10px;
-    
     text-decoration: none;
+}
+@media   only screen and (max-width: 600px) {
+    
+    
 }

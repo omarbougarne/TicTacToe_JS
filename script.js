@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
     for(let j = 0; j < 20; j++){
         let item = document.createElement('div');
         item.classList.add('item');
+        // item.style.flexWrap = 'wrap';
         item.setAttribute("id", `${i}_${j}`);
         item.dataset.row = i;
         item.dataset.col = j;
@@ -67,6 +68,33 @@ document.addEventListener('DOMContentLoaded', function(){
 
     
 });
+        //     let go = document.getElementById('go');
+        //     go.addEventListener('click', function(){
+        //     let p1 = document.getElementById("player1").value;
+        //     console.log(p1);
+        //     let p2 = document.getElementById("player2").value;
+        //     localStorage.setItem('name1', p1);
+        //     localStorage.setItem('name2', p2);
+        // });
+        //     function displayUserName () {
+        //         const name1FromLocalStorage = localStorage.getItem("name1");
+        //         const name2FromLocalStorage = localStorage.getItem("name2");
+        //         let displayedName = document.querySelector(".name1");
+        //         let displayedName2 = document.querySelector(".name2");
+              
+        //         if (name1FromLocalStorage) {
+        //             displayedName.innerHTML = name1FromLocalStorage;
+        //         } else {
+        //             displayedName.textContent = "No name data in local storage"
+        //         }
+        //         if (name2FromLocalStorage) {
+        //             displayedName2.innerHTML = name2FromLocalStorage;
+        //         } else {
+        //             displayedName2.textContent = "No name data in local storage"
+        //         }
+        //       }
+            
+        //     document.addEventListener('DOMContentLoaded',  displayUserName);
 // document.addEventListener('click', function(){
 //     let elements = document.getElementsByClassName('item');
 //     if (event.target.classList.contains('item')) {

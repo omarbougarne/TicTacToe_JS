@@ -15,9 +15,60 @@
         <div id="gameContainer" class="container-style"></div>
         <br>
         <br>
+        <h3>
+            Player1:
+        </h3>
+        <p class="name1"></p>
+        <h3>
+            Player2:
+        </h3>
+        <p class="name2"></p>
+        <table>
+        <tr>
+            <th>
+                Player1 Wins
+            </th>
+            <br>
+            <th>
+                Player2 Wins
+            </th>
+            <br>
+            <th>
+                 Draw
+            </th>
+            
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+    </table>
         <center>
             <button id="cool" onclick="location.reload();">Refresh</button>
         </center>
+
         <script src="script.js" defer></script>
+        <script>
+            function displayUserName () {
+                const name1FromLocalStorage = localStorage.getItem("name1");
+                const name2FromLocalStorage = localStorage.getItem("name2");
+                let displayedName = document.querySelector(".name1");
+                let displayedName2 = document.querySelector(".name2");
+              
+                if (name1FromLocalStorage) {
+                    displayedName.innerHTML = name1FromLocalStorage;
+                } else {
+                    displayedName.textContent = "No name data in local storage"
+                }
+                if (name2FromLocalStorage) {
+                    displayedName2.innerHTML = name2FromLocalStorage;
+                } else {
+                    displayedName2.textContent = "No name data in local storage"
+                }
+              }
+            
+            document.addEventListener('DOMContentLoaded',  displayUserName);
+        </script>
 </body>
 </html>
