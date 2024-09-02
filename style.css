@@ -13,7 +13,7 @@ body{
     gap: 1px;
 }
 .container-style{
-    display: flex;
+    /* display: flex; */
     /*flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-end; */
@@ -58,6 +58,13 @@ input{
     text-decoration: none;
 }
 @media   only screen and (max-width: 600px) {
-    
+    #gameContainer {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 2px;
+}
+.container-style{
+    width: 100%;
+}
     
 }

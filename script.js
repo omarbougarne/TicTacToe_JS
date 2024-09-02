@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     
 });
+document.removeEventListener('DOMContentLoaded', function(){});
         //     let go = document.getElementById('go');
         //     go.addEventListener('click', function(){
         //     let p1 = document.getElementById("player1").value;

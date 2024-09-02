@@ -9,15 +9,16 @@
 </head>
 <body>
     <br>
-    
     <center>
-        <input type="text" placeholder="Player 1 enter your name" id="player1">
+    <h1 style="color: pink;">Enter your Names 👍</h1>
+    
+        <input type="text" placeholder="Player 1 enter your name" id="player1" required>
         <br>
         <br>
-        <input type="text" placeholder="Player 2 enter your name" id="player2">
+        <input type="text" placeholder="Player 2 enter your name" id="player2" required>
         <br>    
         <br>
-        <a href="main-game.html" id="go">Gooo!</a>
+        <a href="main-game.html" id="go" onclick="return validate()">Gooo!</a>
     </center>    
 
 
@@ -25,11 +26,23 @@
                 let go = document.getElementById('go');
             go.addEventListener('click', function(){
             let p1 = document.getElementById("player1").value;
-            console.log(p1);
             let p2 = document.getElementById("player2").value;
             localStorage.setItem('name1', p1);
             localStorage.setItem('name2', p2);
         });
+        function validate() {
+    let p1 = document.getElementById("player1").value;
+    let p2 = document.getElementById("player2").value;
+    let re = /^[a-z]*$/;
+    
+    if (!re.test(p1) || !re.test(p2)) {
+        alert("better alert"); //todo right better alert
+        return false;
+    }
+
+    return true;
+}
+
         </script>
 
 
