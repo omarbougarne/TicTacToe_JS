@@ -33,7 +33,7 @@
         function validate() {
     let p1 = document.getElementById("player1").value;
     let p2 = document.getElementById("player2").value;
-    let re = /^[a-z]*$/;
+    let re = /^[a-zA-Z]*$/;
     
     if (!re.test(p1) || !re.test(p2)) {
         alert("better alert"); //todo right better alert
